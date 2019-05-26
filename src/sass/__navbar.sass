@@ -1,0 +1,46 @@
+body
+  font-family: sans-serif
+.navbar
+  width: 1170px
+  margin: 0 auto
+  padding: 8px 0px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  &-contacts
+    align-items: center
+    display: flex
+  &-addres
+    display: flex
+    flex-direction: column
+    padding-right: 60px
+    text-align: right
+    &-1
+      color: #333333
+      font-size: 13px
+      font-weight: 400
+  &-numar
+    margin-top: 10px
+    color: #333333
+    font-size: 20px
+    font-weight: 400
+    text-decoration: none
+  &-buttons
+    padding-right: 30px
+    &-tel
+      display: inline-block
+      border: none
+      border-radius: 10px;
+      background-color: #ffd200;
+      padding: 19px 30px
+@media(max-width: 1200px) 
+  .navbar
+    width: 960px
+@media(max-width: 768px)
+  .navbar
+    width: 750px 
+@media(max-width: 480px)
+  .navbar
+    width: 96% 
+    &-addres
+      display: none  
