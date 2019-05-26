@@ -78,7 +78,7 @@ body {
 
 @media (max-width: 480px) {
   .navbar {
-    width: 96%;
+    width: 95%;
   }
   .navbar-addres {
     display: none;
@@ -152,10 +152,34 @@ body {
   line-height: 24px;
 }
 
-.box-img {
+.img-hero {
   max-width: 570px;
   max-height: 488px;
-  padding-top: 50px;
-  padding-bottom: 52px;
+}
+
+@media (max-width: 1200px) {
+  .hero-w {
+    width: 960px;
+  }
+}
+
+@media (max-width: 978px) {
+  .hero-w {
+    max-width: 768px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 770px) {
+  .hero-w {
+    width: 480px;
+    width: 95%;
+  }
+  .img-hero {
+    max-width: 320px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
