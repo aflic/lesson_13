@@ -1,64 +1,33 @@
-@import "__navbar"
-.hero
-  background-color: #f5f5f5
-  &-w
-    width: 1170px
-    margin: 0 auto
-    display: flex
-    align-items: center
-.box-info-title
-  padding-bottom: 50px
-  color: #333333
-  font-size: 41px
-  font-weight: 400
-  line-height: 55px
-.box-info-garant
-  display: inline-block
-  color: #333333
-  font-size: 20px
-  font-weight: 400
-  padding-bottom: 69px
-  padding-top: 50px
-.box-info-block
+@import "blocks/navbar"
+body
+  font-family: sans-serif
+img
+  max-width: 100%
+.container
+  width: 1170px
+  margin: auto
+.navbar-block
   display: flex
-  flex-direction: column
-.box-1
-  display: flex
+  justify-content: space-between
   align-items: center
-  color: #333333
-  font-size: 14px
-  font-weight: 400
-  line-height: 24px
-  padding-bottom: 30px
-.box-info-text
-  display: flex
-  margin-left: 30px
-  color: #333333
-  font-size: 14px
-  font-weight: 400
-  line-height: 24px
-.img-hero
-  max-width: 570px
-  max-height: 488px
+.button
+  border-radius: 10px
+  background-color: #ffd200
+  border: none
+  padding: 18px 30px
 @media(max-width: 1200px)
-  .hero-w
-    max-width: 960px
+  .container
+    width: 960px
 @media(max-width: 768px)
-  .hero-w
-    max-width: 750px
-    flex-direction: column
-@media(max-width: 770px)
-  .hero-w
-    // width: 480px
+  .container
+    max-width: 580px
     width: 95%
-  .img-hero
-    max-width: 320px
+  .navbar
+    &__contacts
+      display: none
+    &__button
+      font-size: 12px
+      padding: 15px 26px
+    &__logo
+      width: 90px
 
-    
-
-
-
-
-
-
-  
