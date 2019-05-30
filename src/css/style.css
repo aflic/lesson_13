@@ -83,8 +83,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05);
-          box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05);
 }
 
 @media (max-width: 1200px) {
@@ -110,7 +108,7 @@
         -ms-flex-direction: column;
             flex-direction: column;
     max-width: 580px;
-    width: 90%;
+    width: 100%;
   }
   .hero-text {
     margin-left: 12px;
