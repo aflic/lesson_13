@@ -1,0 +1,122 @@
+.offer
+  background: url('../img/offer_bgc.png') no-repeat
+  background-size: contain
+  background-position: center right
+  position: relative
+  &:before
+    content: ""
+    width: 50%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    background-color: #fff
+  &-block
+    width: 50%
+    padding-top: 84px
+    padding-bottom: 90px
+    padding-right: 90px
+    position: relative
+  &-title
+    display: inline-block
+    color: #333333
+    font-family: "Museo Sans 700 Bold", serif
+    font-size: 24px
+    font-weight: 400
+    line-height: 35px
+    max-width: 350px
+    padding-bottom: 21px
+    margin: 0
+  &-subtitle
+    display: block
+    color: #333333
+    font-family: "Museo Sans 300 Light", serif
+    font-size: 16px
+    font-weight: 400
+    max-width: 250px
+    margin-bottom: 30px
+  &__input
+    border-radius: 10px
+    border: 1px solid #dddddd
+    padding: 20px 26px
+    color: #999999
+    font-family: "Museo Sans 300 Light", serif
+    font-size: 15px
+    font-weight: 400
+    line-height: 24px
+    margin-bottom: 30px
+    width: 240px
+    &:first-child
+      margin-right: 10px
+  &__button
+    width: 100%
+    height: 70px
+    border-radius: 10px
+    background-color: #ffd200
+    color: #333333
+    font-family: "Museo Sans 700 Bold", serif
+    font-size: 16px
+    font-weight: 400
+    line-height: 18px
+  &-info
+    display: flex
+    padding-top: 26px
+    &__text
+      color: #333333
+      font-family: "Museo Sans 300 Light", serif
+      font-size: 14px
+      font-weight: 400
+      line-height: 24px
+      &:first-child
+        width: 224px
+        margin-right: 70px
+  &__tel
+    display: block
+    text-decoration: none
+    color: #333333
+    font-family: "Museo Sans 700 Bold", serif
+    font-size: 15px
+    font-weight: 400
+    line-height: 24px
+@media(max-width: 1200px)
+  .offer
+    background: #fff
+    &-block
+      padding: 50px 0
+      width: 100%   
+    &__input
+      width: 100%  
+      margin-bottom: 10px
+@media(max-width: 768px)
+  .offer
+    &-title
+      width: 270px
+      font-size: 18px
+      line-height: 20px
+    &-subtitle
+      font-size: 14px
+      margin-bottom: 27px
+    &__input
+      &:first-child
+        margin-bottom: 4px
+    &__button
+      font-size: 17px
+    &-info
+      display: flex
+      flex-direction: column
+      padding-top: 23px
+      font-size: 15px
+      line-height: 24px
+      &__text
+        &:first-child
+        margin-bottom: 8px
+.button
+  border-radius: 10px
+
+
+
+
+
+
+
+        
