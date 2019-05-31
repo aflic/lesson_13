@@ -96,6 +96,7 @@
         -ms-flex-direction: column;
             flex-direction: column;
     max-width: 960px;
+    padding-bottom: 52px;
   }
   .hero-list {
     margin-bottom: 44px;
