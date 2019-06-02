@@ -429,6 +429,7 @@ img {
 
 .button {
   border: none;
+  outline: none;
 }
 
 .button:hover {
