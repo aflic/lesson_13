@@ -9,6 +9,11 @@ body
   font-family: sans-serif
 img
   max-width: 100%
+.button
+  border: none
+  &:hover
+    background-color: lighten(#ffd200, 10%)
+    cursor: pointer
 .container
   width: 1170px
   margin: auto
@@ -16,17 +21,15 @@ img
   display: flex
   justify-content: space-between
   align-items: center
-.button
-  border-radius: 5px
+.navbar__button
+  border-radius: 10px
   background-color: #ffd200
   border: none
-  padding: 18px 30px
-  &:hover
-    background-color: lighten(#ffd200, 10%)
-    cursor: pointer
+  padding: 19px 30px
 @media(max-width: 1200px)
   .container
-    width: 960px
+    max-width: 960px
+    width: 90%
 @media(max-width: 768px)
   .container
     max-width: 580px
@@ -43,7 +46,5 @@ img
     &__logo
       padding-left: 5px
       width: 90px
-.button
-  padding: 15px 26px
   
 

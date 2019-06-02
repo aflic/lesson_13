@@ -46,6 +46,9 @@
     line-height: 24px
     margin-bottom: 30px
     width: 240px
+    outline: none
+    &:focus
+      border-color: #ffd200
     &:first-child
       margin-right: 10px
   &__button
@@ -80,15 +83,18 @@
     line-height: 24px
 @media(max-width: 1200px)
   .offer
-    background: #fff
+    background-size: cover
     &-block
       padding: 50px 0
-      width: 100%   
+      width: 50%   
     &__input
       width: 100%  
       margin-bottom: 10px
 @media(max-width: 768px)
   .offer
+    background: #fff
+    &-block
+      width: 100%
     &-title
       width: 270px
       font-size: 18px
@@ -100,8 +106,10 @@
       &:first-child
         margin-bottom: 4px
     &__button
-      font-size: 17px
+      font-size: 14px
+      padding: 19px 64px
     &-info
+      padding-left: 10px
       display: flex
       flex-direction: column
       padding-top: 23px
@@ -110,8 +118,7 @@
       &__text
         &:first-child
         margin-bottom: 8px
-.button
-  border-radius: 10px
+  
 
 
 
