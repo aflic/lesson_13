@@ -53,6 +53,7 @@
       margin-right: 10px
   &__button
     width: 100%
+    // max-width: 495px 
     height: 70px
     border-radius: 10px
     background-color: #ffd200
@@ -86,10 +87,11 @@
     background-size: cover
     &-block
       padding: 50px 0
-      width: 50%   
-    &__input
-      width: 100%  
-      margin-bottom: 10px
+      width: 50% 
+    &__button
+      width: 240px 
+    &-info
+      flex-direction: column  
 @media(max-width: 768px)
   .offer
     background: #fff
@@ -103,21 +105,22 @@
       font-size: 14px
       margin-bottom: 27px
     &__input
+      width: 100%  
+      margin-bottom: 10px
       &:first-child
         margin-bottom: 4px
     &__button
+      width: 100%
       font-size: 14px
       padding: 19px 64px
     &-info
-      padding-left: 10px
-      display: flex
-      flex-direction: column
+      display: flex 
       padding-top: 23px
       font-size: 15px
       line-height: 24px
       &__text
-        &:first-child
-        margin-bottom: 8px
+        // &:first-child
+        // // margin-bottom: 8px
   
 
 

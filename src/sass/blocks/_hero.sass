@@ -49,11 +49,13 @@
       font-weight: 400
       line-height: 24px
   &-img
+    box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05)
     display: flex
     align-items: center
 @media(max-width: 1200px)
   .hero
     &-block
+      flex-direction: column
       max-width: 960px
       padding-bottom: 52px
     &-list
@@ -62,22 +64,20 @@
       padding-right: 10px
 @media(max-width: 768px)
   .hero
-    &-block
-      padding-top: 40px
-      flex-direction: column
-      max-width: 580px
-      width: 100%
     &-text
-      margin-left: 6px  
       &__title
         font-family: "Museo Sans 700 Bold", serif;
         margin: 0px
-        font-size: 21px
+        font-size: 24px
         line-height: 1.4
         margin-bottom: 10px
       &__subtitle
         font-size: 16px
         margin-bottom: 25px
+    &-block
+      padding-top: 40px     
+      max-width: 580px
+      width: 100% 
     &-list
       margin-bottom: 35px
       &__img
