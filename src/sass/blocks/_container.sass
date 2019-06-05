@@ -1,0 +1,41 @@
+.section
+  background: #f5f5f5 url("../img/section-bgc.png") repeat-y
+  background-position: center left
+  background-size: 50%
+  padding-top: 100px
+  padding-bottom: 100px
+.portfolio
+  &__title
+    color: #333333;
+    font-family: "Museo Sans 700 Bold", serif
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 45px;
+    text-align: center
+    padding-bottom: 95px
+    margin: 0
+.slider
+  &__image
+    margin: auto
+.portfolio_arrows
+  display: flex
+  justify-content: space-between
+  padding-top: 68px
+  max-width: 120px
+  margin: auto 
+.arrows
+  &__left, &__right
+    &:hover
+      cursor: pointer
+@media(max-width: 768px)
+  .portfolio
+    &__title
+      font-size: 18px
+      max-width: 275px
+      line-height: 1.2
+      padding-bottom: 41px
+.slider
+  &__image
+     max-width: 246px
+.arrows
+  padding-top: 45px
