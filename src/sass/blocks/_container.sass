@@ -27,15 +27,23 @@
   &__left, &__right
     &:hover
       cursor: pointer
+@media(max-width: 1200px)
+  .portfolio
+    &__title
+      margin: auto
+    .slider
+      &__image
+        max-width: 370px
 @media(max-width: 768px)
   .portfolio
     &__title
+      text-align: center
       font-size: 18px
       max-width: 275px
       line-height: 1.2
       padding-bottom: 41px
-.slider
-  &__image
-     max-width: 246px
-.arrows
-  padding-top: 45px
+    .slider
+      &__image
+        max-width: 246px
+    .arrows
+      padding-top: 45px
