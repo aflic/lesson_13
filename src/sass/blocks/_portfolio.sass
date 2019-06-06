@@ -1,4 +1,4 @@
-.section
+.portfolio
   background: #f5f5f5 url("../img/section-bgc.png") repeat-y
   background-position: center left
   background-size: 50%
@@ -14,7 +14,9 @@
     text-align: center
     padding-bottom: 95px
     margin: 0
-.slider
+.slider 
+  &__items
+    outline: none
   &__image
     margin: auto
 .portfolio_arrows
@@ -36,6 +38,7 @@
         max-width: 370px
 @media(max-width: 768px)
   .portfolio
+    background: #f5f5f5
     &__title
       text-align: center
       font-size: 18px
@@ -47,3 +50,4 @@
         max-width: 246px
     .arrows
       padding-top: 45px
+    
