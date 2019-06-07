@@ -515,7 +515,6 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   text-align: center;
-  margin-bottom: 70px;
 }
 
 .cards {
@@ -601,9 +600,6 @@
 }
 
 @media (max-width: 768px) {
-  .price-section {
-    padding-top: 52px;
-  }
   .price__title {
     width: 242px;
     font-size: 18px;
@@ -616,15 +612,15 @@
   .cards {
     max-width: 271px;
   }
+  .cards:last-child {
+    margin-bottom: 0;
+  }
   .cards__text {
     padding: 35px 0;
   }
   .cards__title {
     font-size: 14px;
     margin-bottom: 15px;
-  }
-  .cards .card {
-    margin-bottom: 20px;
   }
 }
 
