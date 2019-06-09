@@ -6,6 +6,7 @@
 @import "blocks/portfolio"
 @import "blocks/price"
 @import "blocks/steps"
+@import "blocks/brif"
 @import "fonts"
 *
   box-sizing: border-box
@@ -15,9 +16,14 @@ img
   max-width: 100%
 .section
   padding: 100px 0
-@media(max-width: 768px)
-  .section
-    padding: 50px 0
+.input
+  color: #999999
+  font-family: "Museo Sans 300 Light", serif
+  border-radius: 10px
+  border: 1px solid #dddddd
+  outline: none
+  &:focus
+    border-color: #ffd200
 .button
   border: none
   outline: none
@@ -56,5 +62,7 @@ img
     &__logo
       padding-left: 5px
       width: 90px
-  
+@media(max-width: 768px)
+  .section
+    padding: 50px 0
 
