@@ -839,12 +839,23 @@
             flex-direction: column;
   }
   .from {
-    margin-top: 60px;
     padding-left: 0;
+  }
+  .from__desc {
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .from__brif {
+    margin-top: 200px;
   }
   .interview {
     padding-right: 0;
     max-width: 400px;
+    max-height: 508px;
+  }
+  .interview__list {
+    margin-bottom: 200px;
   }
 }
 

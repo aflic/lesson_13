@@ -88,9 +88,9 @@
             <span class="offer-subtitle">Оставьте заявку на разработку 
                бесплатного дизайн-проекта!
                </span>
-               <form action="#" class="form offer__form">
-                  <input type="text" required name="username" class="input offer__input" placeholder="Ваше имя">
-                  <input type="tel" required class="input offer__input phone" placeholder="Ваш телефон">
+               <form action="#" class="form offer__form" id="offer__form">
+                  <input type="text" required  name="username" minlength="2" maxlength="15" class="input offer__input" placeholder="Ваше имя">
+                  <input type="tel" required name="phone" class="input offer__input phone" placeholder="Ваш телефон">
                   <button class="button offer__button">
                         Получить бесплатный дизайн-проект
                   </button>
@@ -222,7 +222,7 @@
                <form action="#" id="brif-form">
                   <input type="text" name="username" class="input from__input" placeholder="Ваш имя">
                   <input type="tel" name="phone" class="input from__input phone" placeholder="Ваш телефон">
-                  <input type="tel" name="email" class="input from__input" placeholder="Ваш email">
+                  <input type="email" name="email" class="input from__input" placeholder="Ваш email">
                   <button class="button from__button">Рассчитать стоимость</button>
                   <span class="from__desc">Мы перезвоним Вам в течение 60 секунд</span>
                </form>
@@ -244,6 +244,7 @@
    <script src="src/js/slick.min.js"></script>
    <script src="src/js/jquery.maskedinput.min.js"></script>
    <script>
+         
          $('#brif-form').validate({
             rules:{
                username: {
@@ -255,7 +256,14 @@
                   required: true,
                   email: true
                },
-               phone: 'required'
+               phone: {
+                  required: true
+               }
+            },
+            messages: {
+               username: 'Укажите имя',
+               email: 'Укажите email',
+               phone: 'Укажите телефон'
             }
          });
          $('.phone').mask('+7 (999) 999-99-99');
