@@ -1,0 +1,73 @@
+.footer
+  position: relative
+.map
+  height: 640px
+  width: 50%
+  top: 0
+  left: 0
+  position: absolute
+.contacts
+  flex-basis: 50%
+  padding-top: 100px
+  padding-left: 200px
+  &-block
+    display: flex
+    justify-content: flex-end
+  &__title
+    max-width: 285px
+    margin: 0
+    font-size: 22px;
+    font-family: "Museo Sans 700 Bold", serif
+    padding-bottom: 93px
+    line-height: 33px
+  &-list
+    margin: 0
+    list-style: none 
+    padding: 0
+    &__item
+      display: flex
+      align-items: flex-start
+      padding-bottom: 30px
+    &__text 
+      padding-left: 25px
+      line-height: 26px;
+    &__icon
+      display: flex
+      width: 20px
+      height: 20px
+      // text-align: center
+      line-height: 20px
+.bold
+  color: #000000
+  margin: 0
+  text-decoration: none
+  font-family: "Museo Sans 700 Bold", serif
+@media(max-width: 768px)
+  .footer
+    display: flex
+    flex-direction: column
+  .map
+    top: 100%
+    width: 100%
+  .contacts
+    flex-basis: 100%
+    padding-left: 4px
+    padding-top: 63px
+    &__title
+      padding-bottom: 39px
+      max-width: 240px
+      font-size: 18px
+      line-height: 22px
+    &-list
+      &__text
+        padding-left: 15px
+        line-height: 26px
+      &__item
+        align-items: end
+        &:last-child
+          padding-bottom: 64px
+
+      
+
+
+  
