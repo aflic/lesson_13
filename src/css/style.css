@@ -854,8 +854,8 @@
     max-width: 400px;
     max-height: 508px;
   }
-  .interview__list {
-    margin-bottom: 200px;
+  .interview-list__text {
+    max-width: 200px;
   }
 }
 
